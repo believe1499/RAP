@@ -522,7 +522,7 @@ CREATE TABLE tb_rule (
   action_id   INT(10)  NOT NULL
     PRIMARY KEY,
   rules       TEXT     NOT NULL, -- JSON规则
-  update_time DATETIME NOT NULL
+  update_time TIMESTAMP NOT NULL
     DEFAULT NOW(), -- 最近更新时间
 
   FOREIGN KEY (action_id) REFERENCES tb_action (id)

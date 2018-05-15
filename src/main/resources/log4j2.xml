@@ -5,8 +5,8 @@
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
         <RollingFile name="DetailLog"
-                     fileName="logs/rap-detail.log"
-                     filePattern="logs/rap.detail.%d{yyyy_MM_dd}.PART_%i.log">
+                     fileName="/home/document/apache-tomcat-8.5.20/log/rap-detail.log"
+                     filePattern="/home/document/apache-tomcat-8.5.20/log/rap.detail.%d{yyyy_MM_dd}.PART_%i.log">
             <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
             <Policies>
                 <SizeBasedTriggeringPolicy size="100 MB"/>
@@ -14,8 +14,8 @@
             <DefaultRolloverStrategy max="1000"/>
         </RollingFile>
         <RollingFile name="ErrorLog"
-                     fileName="logs/rap-error.log"
-                     filePattern="logs/rap.error.%d{yyyy_MM_dd}.PART_%i.log">
+                     fileName="/home/document/apache-tomcat-8.5.20/log/rap-error.log"
+                     filePattern="/home/document/apache-tomcat-8.5.20/log/rap.error.%d{yyyy_MM_dd}.PART_%i.log">
             <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
             <Policies>
                 <SizeBasedTriggeringPolicy size="100 KB"/>
