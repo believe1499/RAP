@@ -1,8 +1,12 @@
-# Package Files #
-out
-target
-build
-.idea
+*.project
+.settings
+/config-online/*.classpath
+/config-core-api/*.classpath
+/config-common/*.classpath
+log
+/config-client/*.classpath
 *.iml
-.DS_Store
-bak
+.idea/
+/target/
+/.externalToolBuilders
+/.classpath
